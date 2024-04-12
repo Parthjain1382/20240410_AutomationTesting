@@ -10,32 +10,26 @@ package Aspire;
 	    	
 
 	        WebDriver driver = new ChromeDriver();
-	        driver.get("https://www.calculator.net/bmi-calculator.html");
+	        driver.get("https://www.naukri.com");
 
 	        // Find the email input field by its XPath
-//	        WebElement emailInput = driver.findElement(By.id("usernameField"));
-//	        emailInput.sendKeys("pranayjain1382@gmail.com");
-//
-//	        // Find the password input field by its XPath	
-//	        WebElement passwordInput = driver.findElement(By.xpath("//INPUT[@id='passwordField']"));
-//	        // Enter password
-//	        passwordInput.sendKeys("Parthjain@123");
-//	        
-//	        
-//	        passwordInput.submit();
+	        WebElement emailInput = driver.findElement(By.id("usernameField"));
+	        emailInput.sendKeys("pranayjain1382@gmail.com");
+
+	        // Find the password input field by its XPath	
+	        WebElement passwordInput = driver.findElement(By.xpath("//INPUT[@id='passwordField']"));
+	        // Enter password
+	        passwordInput.sendKeys("Parthjain@123");
+	        
+	      
+	        passwordInput.submit();
 	        
 
 	        
 	        WebElement Register = driver.findElement(By.xpath("//a[text()='Register for Free']"));
 	        Register.click();
      	
-	        WebElement RadioButton = driver.findElement(By.id("cbcontainer"));
-	        Register.click();
-	        
-	        
-//	        WebElement fullName =driver.findElement(By.id("name"));
-	         
-	        WebElement T&c =driver.findElement(By.linkText("Terms and Conditions"));
+	    
 	    }
 	}
 
